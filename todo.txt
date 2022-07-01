@@ -1,0 +1,22 @@
+delete FROM `klt_comlines` WHERE empresa_id = 5;
+delete FROM `klt_depositos` WHERE empresa_id = 5;
+delete FROM `klt_compras` WHERE empresa_id = 5;
+
+UPDATE klt_productos SET destino_empresa_id = 1 where destino_empresa_id = 14 and empresa_id = 1 and date(updated_at) = "2020-10-21"
+
+
+* * * * * cd ~/apporo && /home/oro-gestion/.bin/php artisan schedule:run >> /home/oro-gestion/logs/cron_logs/cron.log 2>&1
+* * * * * cd ~/laraquil && /home/oro-gestion/.bin/php artisan schedule:run >> /dev/null 2>&1
+@reboot /home/oro-gestion/VENV/bin/supervisord  -c /home/oro-gestion/VENV/bin/supervisord.conf
+
+UPDATE `klt_productos` set nombre = REPLACE(nombre,'ROPA.','') where nombre LIKE 'ROPA.%'
+
+
+ck_936d7c02bb331b0044e6ab11b27f1eeeb9d93ad4
+cs_d30f94acd3c8daa9abd9a65b2c20b4ccac0980b1
+
+
+cambio usuarios
+
+
+SELECT model_id, count(*) FROM klt_model_has_roles group by 1 ORDER BY count(*) desc
