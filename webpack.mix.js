@@ -25,7 +25,7 @@ mix.js('resources/js/app.js', 'public/js').version()
 
 
 mix.browserSync({
-	proxy: 'http://laraquil.test',
+	proxy: 'http://test.test',
 	open:false
 });
 
